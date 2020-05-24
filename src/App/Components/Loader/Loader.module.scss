@@ -1,0 +1,78 @@
+.loaderBody {
+    text-align: center;
+    flex-grow : 1;
+    width     : 100%;
+
+    h2,
+    h3,
+    h4 {
+    }
+
+    p {
+        font-size     : 19px;
+        font-weight   : normal;
+        font-style    : normal;
+        font-stretch  : normal;
+        line-height   : normal;
+        letter-spacing: normal;
+    }
+}
+
+.loaderFooter {
+    @at-root .desktop#{&} {
+        display        : flex;
+        justify-content: center;
+        align-items    : stretch;
+        width          : 100%;
+
+        button {
+            width: 160px
+        }
+    }
+
+    @at-root .mobile#{&} {
+        display       : flex;
+        align-items   : center;
+        flex-direction: column;
+        width         : 100%;
+
+        button {
+            width: 100%;
+        }
+
+        button+button {
+            margin-top: 12px
+        }
+    }
+
+    button {
+        font-size    : 15px;
+        padding-right: 10px;
+
+        img {
+            height: 18px;
+        }
+
+        @at-root .desktop#{&} {
+            max-width: 260px;
+        }
+    }
+}
+
+.exit {
+    position  : absolute;
+    margin-top: -26px;
+}
+
+.exitButton {
+    position: absolute;
+    cursor  : pointer;
+
+    &:hover {        
+    }
+}
+
+.icon {
+    width : 48px;
+    height: 48px;
+}

@@ -1,0 +1,149 @@
+.Nav {
+    display: flex;
+    flex-direction: row;    
+    background-color: #EF5350 !important;
+    height: 50px;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25) !important;
+    padding: 5px 15px;
+       
+    & > img {
+        height: 2.5rem;
+    }
+
+    & > a {
+        color: white;
+        font-size: 24px;
+        font-weight: 500;
+        padding: 0 0.5rem;
+        text-decoration: none;
+        @media (min-width: 576px) {
+            padding-right: 1.5rem;         
+        }
+    }
+}
+
+button:focus {    
+    outline: 0px auto #D74A48;
+}
+
+.NavButtonToggler{
+    background-color: #D74A48;    
+    border: 0px solid;
+    border-radius: 3px; 
+    justify-self: flex-end;   
+
+    & > svg {
+        color: white;
+    }
+    
+    &:hover {
+        background-color: #C14240;
+        color: white;
+    } 
+}
+
+.NavCollapsedMenu {
+    padding: 8px;
+    margin-top: 5px;
+    margin-right: -15px;
+    margin-left: -15px;
+    background-color: #FDEDED;  
+    border-bottom-color: #f7a9a7;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+    @media (min-width: 992px) {
+        padding: 0;
+        margin-top: 0;
+        margin-right: 0;
+        margin-left: 0;
+        background-color: transparent;
+        border-bottom-color: none;
+        border-bottom-width: 0px;
+        border-bottom-style: none;
+    }
+}
+
+.NavButton{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    padding: 9px 8px;
+    border-radius: 3px ;
+    border-color: #D74A48;
+    box-shadow: none;
+    flex-direction: column;
+    background-color: #D74A48;
+    color: white;
+    
+    &:hover {
+        background-color: #C14240;
+        color: white;
+    }        
+}
+
+
+.Content {    
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 8px;
+    padding-top: 66px;
+    max-width: 1000px;  
+
+    @media (min-width: 576px) { 
+        padding: 16px;
+        padding-top: 66px;
+    }
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 32px;
+    align-items: center;    
+    
+    & > hr {        
+        margin: 0;  
+        margin-bottom: 8px; 
+        border-top: 1px solid;
+        color: #facbca !important;    
+        width: 100%;    
+    }
+}
+
+.FooterHeader{
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    color: #facbca !important;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    @media (min-width: 576px) {
+        align-self: flex-end;
+    }
+}
+.FooterCaption {
+    display: flex;
+    flex-grow: 1;
+    align-self: center;
+    color: #fbdcdc !important;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+
+    @media (min-width: 576px) {
+        align-self: flex-end;
+    }
+}
