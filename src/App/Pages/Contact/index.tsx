@@ -28,10 +28,10 @@ const About = ({ ...props } : any) => {
                 <div className={styles.social}>
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.facebook.com/mipsicopedia-104501857947346/"}><img src={iconFacebook} alt="facebook"/>mipsicopedia</a>
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/mipsicopedia/"}><img src={iconInstagram} alt="instagram"/>@mipsicopedia</a>
-                    <a href={"tel:+573152810049"}><img src={iconWhatsapp} alt="whatsapp"/>+57 315 281 0049</a>
+                    <a href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>#Psicopedia</a>
                 </div>
                 <div className={styles.captionB}>
-                    Email: <a href={"mailto:psicopedia@gmail.com"}>psicopedia@gmail.com</a>
+                    Email: <a href={"mailto:psicopediacol@gmail.com"}>psicopediacol@gmail.com</a>
                 </div>
                 <div className={styles.captionB}>Bogotá, Colombia</div>
             </div>

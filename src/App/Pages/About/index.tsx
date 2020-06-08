@@ -3,9 +3,9 @@ import Template from "../../Template";
 import styles from "./About.module.scss";
 
 import peopleZobed from "../../../Assets/people/Zobed.jpg";
-import peopleAmiga1 from "../../../Assets/people/amiga1.jpg";
-import peopleAmiga2 from "../../../Assets/people/amiga2.jpg";
-import peopleAmiga3 from "../../../Assets/people/amiga3.jpg";
+import peopleAmiga1 from "../../../Assets/people/amigaA.jpg";
+import peopleAmiga2 from "../../../Assets/people/amigaB.jpg";
+import peopleAmiga3 from "../../../Assets/people/amigaC.jpg";
 
 const About = ({ ...props } : any) => {
 

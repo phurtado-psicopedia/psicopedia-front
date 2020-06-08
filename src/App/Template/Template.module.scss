@@ -280,6 +280,27 @@ button:focus {
         align-self: flex-end;
         text-align: right;
     }
+    & > p {
+        margin: 0;
+    }
+    & > p > svg {
+        color: #ff6a6a;        
+        font-size: 13px;
+    }
+
+    & > p > a {
+        text-decoration: none;
+        color: greenyellow;
+    }
+}
+.Y {
+    color: #FCD116 !important;
+}
+.B {
+    color: #003893 !important;
+}
+.R {
+    color: #CE1126 !important;
 }
 
 .FooterSocial {

@@ -60,18 +60,15 @@ const Template: React.FC = (props: any) => {
           <div className={styles.FooterSocial}>
             <a className={styles.hiddenText} target="_blank" rel="noopener noreferrer" href={"https://www.facebook.com/mipsicopedia-104501857947346/"}><img src={iconFacebook} alt="facebook"/>mipsicopedia</a>
             <a className={styles.hiddenText} target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/mipsicopedia/"}><img src={iconInstagram} alt="instagram"/>@mipsicopedia</a>
-            <a href={"tel:+573152810049"}><img src={iconWhatsapp} alt="whatsapp"/>+57 315 281 0049</a>
+            <a href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>#Psicopedia</a>
           </div>
           <div className={styles.FooterHeader}>Psicopedia</div>
-        </div>
-        <div className={styles.FooterCEO}>
-        <p><b>CEO: </b> Zobed Villalba </p>
         </div>
         <div className={styles.FooterCaption}>
             Todos los derechos reservados. Copyright © 2020.
         </div>
         <div className={styles.FooterCaption2}>
-          Made in Colombia with <FontAwesomeIcon icon={faHeart} /> by @javialej
+          <p>Made in <span className={styles.Y}>Co</span><span className={styles.B}>lom</span><span className={styles.R}>bia</span> with <FontAwesomeIcon icon={faHeart} /> by <a href={"https://www.linkedin.com/in/javialej/"}>javialej</a></p>
         </div>
       </div>
     </div>
