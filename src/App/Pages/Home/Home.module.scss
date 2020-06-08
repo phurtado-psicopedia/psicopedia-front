@@ -87,14 +87,19 @@
     font-family: "Jost";
     font-weight: 300;
     color: white;
-    background: url("../../../Assets/yoga.jpeg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
+    background-color: #323232;
+    background-image:url("../../../Assets/yoga.jpeg"); 
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-attachment:fixed; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+    
     padding: 16px;
     
-
     & > .headline {
         text-align: center;
         padding-left: 8px;
@@ -133,7 +138,15 @@
     -o-background-size: cover;
     background-size: cover;
     padding: 16px;
-    background: url("../../../Assets/psicologo.jpg") no-repeat center center fixed;
+    background-image: url("../../../Assets/psicologo.jpg"); 
+    background-repeat:no-repeat;
+    background-position:center; 
+    background-attachment:fixed; 
+    -o-background-size:cover; 
+    -moz-background-size:cover; 
+    -webkit-background-size:cover; 
+    background-size:cover; 
+
     @media (min-width: 576px) {
         padding: 60px;
         box-shadow: 0 1px 4px 0 #00000040 !important;
