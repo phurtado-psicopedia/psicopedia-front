@@ -1,29 +1,37 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { HOME_PATH, SIGNUP_PATH, POKEDEX_PATH } from "../Config/constants/ROUTER_URLs";
+import { 
+  HOME_PATH, 
+  CONTACT_PATH, 
+  SERVICES_PATH, 
+  ABOUT_PATH
+} from "../Config/constants/ROUTER_URLs";
 
 import Home from "./Pages/Home";
-import SignUp from "./Pages/SignUp";
-import Pokedex from "./Pages/Pokedex";
-import PokemonDetail from "./Pages/PokemonDetail";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Contact from "./Pages/Contact";
 import NotFound from "./Pages/NotFound";
 
 import PrivateRoute from "../Config/PrivateRoute";
+import ScrollToTop from "../Config/ScrollToTop";
 // import AuthGate from "./Components/public/AuthGate";
 
 const Routes = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       {/* <AuthGate> */}
         <Switch>          
           {/* Modules routes */}                 
-          <PrivateRoute exact path={POKEDEX_PATH} component={Pokedex} />
-          <PrivateRoute path={POKEDEX_PATH+"/:id?"} component={PokemonDetail} />
-          
-
+          <PrivateRoute exact path={"private-path"} component={NotFound} />
+          <PrivateRoute path={"private-path/:id?"} component={NotFound} />
+    
           {/* Common routes */}
-          <Route exact path={SIGNUP_PATH} component={SignUp} />
+          <Route exact path={CONTACT_PATH} component={Contact} />
+          <Route exact path={SERVICES_PATH} component={Services} />
+          <Route exact path={ABOUT_PATH} component={About} />      
           <Route exact path={HOME_PATH} component={Home} />
 
           <Route component={NotFound} />

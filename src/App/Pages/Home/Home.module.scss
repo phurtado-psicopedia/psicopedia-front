@@ -1,207 +1,229 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('../../../Assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Jost";
+    src: url('../../../Assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+}
+
 .HomeWelcome {
-    font-size: 18px;
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #64b5f6;
-    padding: 14px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border-radius: 3px;    
     margin-bottom: 16px;
-    border-radius: 3px;
-    background-color: #eff7fe;
-}
 
-.HomeSuccess {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #66bb6a;
-    padding: 8px;
-    margin-bottom: 8px;
-    border-radius: 3px;
-    background-color: #e0f1e1;
-    & > p {
-        margin: 0;
+    @media (min-width: 576px) {
+        flex-wrap: nowrap;
     }
 }
 
-.HomeError {
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #ef5350;
-    padding: 8px;
-    margin-bottom: 8px;
-    border-radius: 3px;
-    background-color: #fbdcdc;
-    & > p {
+.HomeWelcomeLeft {
+    display: flex;    
+    flex-direction: column;  
+    justify-content: center;    
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    font-family: "Quicksand";
+    
+    background: white;
+
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px; 
+
+    & > .header {    
+        text-align: center;        
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: normal;
+        color: #bec63e;    
+    }
+
+    & > .caption {
+        padding-top: 5px;
         margin: 0;
+        font-size: 19px;
+        font-weight: 500;
+        color: #323232;
     }
 }
 
+.HomeWelcomeRight {
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
 
-.HomeLogin {
-    margin: 0 auto;
+    & > img {
+        width: 150px;
+    }
+
+    @media (min-width: 576px) {
+        margin-left: 16px;
+        border-radius: 5px;
+    }
+
+}
+
+.prompt1{
+    margin: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    justify-content: center;    
     align-items: center;
-    align-self: center;
-    border-radius: 3px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
-    padding: 16px 16px;
+    font-size: 32px;
+    font-family: "Jost";
+    font-weight: 300;
+    color: white;
+    background: url("../../../Assets/yoga.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 16px;
+    
+
+    & > .headline {
+        text-align: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        @media (min-width: 576px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+    &:hover {
+        color: whitesmoke;
+        text-decoration: none;
+    }
 
     @media (min-width: 576px) {
-        width: 480px;
-        padding: 16px 80px;
+        padding: 50px;
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+        border-radius: 5px; 
     }
 }
 
-.HomeLoginTitle{
-    font-size: 24px;
-    line-height: 1.2;
-    font-weight: 500;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    color: #ef5350;
-    padding-bottom: 5px;
-}
-
-.HomeLoginCaption{
-    font-size: 14px;
-    line-height: 1.2;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    padding-bottom: 12px;
-}
-
-.HomeUsername{
-    padding-bottom: 8px;
-
-    & > input {
-        border-color: #f7a9a7;
-
-        &:hover {
-            border-color: #ef5350;
-        }        
-    }
-
-    & > div > span {
-        background-color: #fbdcdc;
-        color: #ef5350;
-        border-color: #f7a9a7;
-        &:hover {
-            border-color: #ef5350;
-        }   
-    }
-}
-
-.HomePassword{
-    padding-bottom: 8px;
-
-    & > input {
-        border-color: #f7a9a7;
-
-        &:hover {
-            border-color: #ef5350;
-        }        
-    }
-
-    & > div > span {
-        background-color: #fbdcdc;
-        color: #ef5350;
-        border-color: #f7a9a7;
-        &:hover {
-            border-color: #ef5350;
-        }   
-    }
-}
-
-.HomeCreateAccount{
-    font-size: 12px;
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    padding-bottom: 8px;
-    & > p {
-        margin: 0;
-    }
-}
-
-.HomeLoginButton{
-    font-size: 21px;
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    margin: 0;    
-    margin-top: 12px;
-    padding: 12px 32px;    
-    color: #d74a48;
-    background-color: #fdeded;
-    border: 0px solid;
-    border-radius: 3px;
-    
-    &:hover{
-        background-color: #fbdcdc;
-    }
-}
-
-.HomeButton{
-    line-height: 1.2;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    letter-spacing: normal;
-    margin-bottom: 16px;
-    border-radius: 3px;    
-    background-color: transparent;
-    margin: 0;
-
-    &.Login{  
-        padding: 12px 55px;
-        font-size: 21px;
-        font-weight: 600;
-        color: #d74a48;
-        border: 0px solid #d74a48;
-        background-color: #fdeded;
-        &:hover{
-            background-color: #fbdcdc;
-        }
-    }
-    
-    &.Create{
-        padding: 15px 10px;
-        font-size: 16px;
-        font-weight: normal;
-        color: #757575;
-        border: 0px solid #757575;
-        background-color: #e3e3e3;
-        &:hover{
-            background-color: #d5d5d5;         
-        }
-    }
-    
-}
-
-.HomeButtons{
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    justify-content: space-around;
+.prompt2{
+    margin-top: 16px;
     width: 100%;
-    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;    
+    align-items: center;
+    font-size: 32px;
+    font-family: "Jost";
+    font-weight: 300;
+    color: white;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 16px;
+    background: url("../../../Assets/psicologo.jpg") no-repeat center center fixed;
+    @media (min-width: 576px) {
+        padding: 60px;
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+        border-radius: 5px; 
+        margin-top: 16px;
+    }
+}
+
+.prompt3{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;    
+    align-items: center;
+    
+    @media (min-width: 576px) {
+        border-radius: 5px; 
+        margin-top: 8px;
+    }
+}
+
+.cell{
+    flex: 1 1 200px;   
+    height: 100px;  
+    display: flex;    
+    justify-self: center;
+    justify-items: center;
+    justify-content: center;    
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+    font-family: "Lato";
+    text-align: left;
+    padding: 8px;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 2px;
+
+    @media (min-width: 576px) {
+        font-size: 24px;
+        text-align: center;
+        border-radius: 5px;
+        height: 250px;
+        border-color: white;
+        border-style: solid;
+        border-width: 2px;
+    }
+}
+
+.prompt4 {
+    display: flex;    
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+
+    & > img {
+        width: 150px;
+    }
+
+    @media (min-width: 576px) {
+        margin-left: 16px;
+        border-radius: 5px;
+    }
+
+}
+
+.prompt5{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;    
+    align-items: center;
+    font-size: 32px;
+    font-family: "Jost";
+    font-weight: 300;
+    color: #323232;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 16px;
+    background-color: #f5f5f5;
+    @media (min-width: 576px) {
+        padding: 10px;
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+        border-radius: 5px; 
+        margin-top: 16px;
+    }
 }

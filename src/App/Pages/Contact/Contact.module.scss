@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('../../../Assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Quicksand";
+    src: url('../../../Assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lato";
+    src: url('../../../Assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url('../../../Assets/fonts/Lato-Light.ttf') format('truetype');
+}
+.canvas{
+    margin: 0;
+    padding: 24px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;    
+    align-items: center;
+    color: #323232;
+    background-color: #e5f6f7;
+    border-radius: 5px; 
+    box-shadow: 0 1px 4px 0 #00000040 !important;
+
+    @media (min-width: 992px) {
+        padding: 32px; 
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+    & > a {
+        font-size: 24px;
+        font-family: "Lato";
+        color: blue;
+        margin-bottom: 10px;
+        @media (min-width: 992px) {
+            margin-bottom: 0px;
+        }
+    }
+
+    & > a > img {
+        width: 40px;
+        margin-left: 20px;
+        margin-right: 10px;
+
+        @media (min-width: 992px) {
+            width: 60px;
+            margin-left: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        align-self: center;
+    }
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+}
+
+.headline {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 32px;
+    font-family: "Quicksand";
+}
+
+.captionH {
+    text-align: center;
+    margin-top: 8px;
+    font-family: "Lato";
+    font-size: 18px;
+    @media (min-width: 576px) {
+        font-size: 24px;
+    }
+}
+.captionB {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-family: "Lato-Light";
+
+    font-size: 18px;
+    @media (min-width: 576px) {
+        font-size: 24px;
+    }
+}
+
+
+.form {
+    text-align: center;
+    margin-top: 8px;
+    font-family: "Lato";
+    font-size: 24px;
+}
+

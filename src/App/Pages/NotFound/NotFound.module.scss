@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Quicksand";
+    src: url('../../../Assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lato";
+    src: url('../../../Assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+
+.Body{
+    margin: 0;
+    padding: 0 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;    
+    align-items: center;
+}
+
+.BodyText{
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.091);
+    color: orange;
+    font-family: "Quicksand";
+    font-size: 24px;
+    margin: 0;
+    margin-top: 32px;
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    align-items: flex-start;
+
+    @media (min-width: 576px) {
+        flex-direction: row;
+    }
+
+    & > p {
+        margin: 0;
+    }
+}
+
+.Icon {
+    color: orange;
+    margin-right: 16px;
+    margin-left: 54px;
+    margin-bottom: 16px;
+    height: 100px;
+    width: 10px;
+
+    @media (min-width: 576px) {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+}
+
+.ErrorCaption{
+    color: red;
+    font-family: "Lato";
+    font-size: 12px;
+    margin: 0;
+    margin-top: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    align-items: flex-start;  
+}

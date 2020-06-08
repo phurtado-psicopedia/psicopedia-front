@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url('../../../Assets/fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Quicksand";
+    src: url('../../../Assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Jost";
+    src: url('../../../Assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lato";
+    src: url('../../../Assets/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+.prompt1{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;    
+    align-items: center;
+    
+    font-family: "Jost";
+    font-weight: 300;
+    color: #323232;
+    background-color: #f5f5f5;
+    background-image: url("../../../Assets/p1.png");
+    
+    padding: 16px;
+    border-radius: 5px; 
+
+    & > .headline {
+        text-align: left;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 8px;
+        font-size: 32px;
+        @media (min-width: 576px) {
+            padding-left: 0px;
+            padding-right: 32px;
+        }
+    }
+    & > .caption {
+
+        text-align: justify;
+        margin-top: 8px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-family: "Lato";
+        font-size: 16px;
+        border-left-color: #323232;
+        border-left-style: solid;
+        border-left-width: 5px;
+        @media (min-width: 576px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }    
+
+    @media (min-width: 576px) {
+        padding: 50px;
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+    }
+}
+
+
+.prompt2{
+    margin: 0;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: center;    
+    align-items: center;
+    
+    font-family: "Jost";
+    font-weight: 300;
+    color: #1c5b5f;    
+    background: rgba(168,226,229,1);
+    background: -moz-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgba(213,241,243,1) 98%, rgba(213,241,243,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,226,229,1)), color-stop(37%, rgba(168,226,229,1)), color-stop(98%, rgba(213,241,243,1)), color-stop(100%, rgba(213,241,243,1)));
+    background: -webkit-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgba(213,241,243,1) 98%, rgba(213,241,243,1) 100%);
+    background: -o-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgba(213,241,243,1) 98%, rgba(213,241,243,1) 100%);
+    background: -ms-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgba(213,241,243,1) 98%, rgba(213,241,243,1) 100%);
+    background: linear-gradient(to right, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgba(213,241,243,1) 98%, rgba(213,241,243,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8e2e5', endColorstr='#d5f1f3', GradientType=1 );
+
+    padding: 16px;
+    border-radius: 5px; 
+
+    & > .headline {
+        text-align: center;
+        padding: 8px;        
+        font-size: 24px;
+        border-bottom-color: #1c5b5f;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        @media (min-width: 576px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    @media (min-width: 576px) {
+        padding-left: 50px;     
+        padding-right: 50px;    
+        margin-bottom: 0px; 
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+    }
+}
+
+.people{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;    
+    align-items: flex-start;
+
+    @media (min-width: 780px) {    
+        flex-wrap: nowrap;
+    }
+}
+.personCard {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;    
+    align-items: center;
+    padding: 16px;
+
+    width: 100%;
+
+    & > img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    & > .name {
+        font-family: "Quicksand";
+        font-size: 20px;
+        text-align: center;
+        padding-top: 8px;
+        padding-bottom: 16px;
+    }
+
+    & > .description {
+        font-family: "Lato";
+        font-size: 14px;
+        text-align: justify;
+    }
+}
