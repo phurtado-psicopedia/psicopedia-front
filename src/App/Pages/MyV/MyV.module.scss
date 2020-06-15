@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Jost";
+    src: url('../../../Assets/fonts/Jost-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url('../../../Assets/fonts/Lato-Light.ttf') format('truetype');
+}
+
+.container{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;    
+    margin-bottom: 16px;
+
+    @media (min-width: 576px) {
+        flex-wrap: nowrap;    
+    }
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.prompt2{
+    margin: 0;
+    margin-top: 8px;
+    padding: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;    
+    align-items: center;
+
+    
+    font-family: "Jost";
+    font-weight: 300;
+    color: #323232;    
+
+    
+    
+    & > .headline {
+        text-align: center;
+        padding: 8px;        
+        font-size: 32px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        @media (min-width: 992px) {
+            padding: 32px;            
+        }
+    }
+
+    & > .caption {
+        text-align: left;
+        font-size: 18px;
+        font-family: "Lato-Light";
+        line-height: 35px;
+    }
+
+    @media (min-width: 576px) {
+        box-shadow: 0 1px 4px 0 #00000040 !important;
+        border-radius: 10px; 
+        margin-top: 0px;
+        margin-bottom: 16px;
+        padding: 24px;
+    }
+
+    @media (min-width: 700px) {
+        padding: 32px;
+    }
+
+    @media (min-width: 992px) {
+        padding: 32px;
+        height: 436px;
+        flex-direction: column;
+        width: 49.5%;        
+    }
+    
+}

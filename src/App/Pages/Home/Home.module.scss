@@ -86,9 +86,7 @@
     font-size: 32px;
     font-family: "Jost";
     font-weight: 300;
-    color: white;
-
-    background-color: #636363d2;    
+    
     padding: 16px;
     
     & > .headline {
@@ -106,9 +104,32 @@
     }
 
     @media (min-width: 576px) {
-        padding: 50px;
         box-shadow: 0 1px 4px 0 #00000040 !important;
         border-radius: 5px; 
+    }
+}
+.p1A{
+    color: white;
+    background-color: #636363d2;
+    @media (min-width: 576px) {
+        padding: 50px;
+    }
+}
+
+.p1B{
+    color: white;
+    background: rgba(168,226,229,1);
+    background: -moz-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgb(174, 231, 237) 98%, rgb(174, 231, 237) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,226,229,1)), color-stop(37%, rgba(168,226,229,1)), color-stop(98%, rgb(174, 231, 237)), color-stop(100%, rgb(174, 231, 237)));
+    background: -webkit-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgb(174, 231, 237) 98%, rgb(174, 231, 237) 100%);
+    background: -o-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgb(174, 231, 237) 98%, rgb(174, 231, 237) 100%);
+    background: -ms-linear-gradient(left, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgb(174, 231, 237) 98%, rgb(174, 231, 237) 100%);
+    background: linear-gradient(to right, rgba(168,226,229,1) 0%, rgba(168,226,229,1) 37%, rgb(174, 231, 237) 98%, rgb(174, 231, 237) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a8e2e5', endColorstr='#d5f1f3', GradientType=1 );
+    margin-top: 16px;
+    
+    @media (min-width: 576px) {
+        padding: 20px;
     }
 }
 

@@ -15,7 +15,8 @@ import {
   HOME_PATH, 
   CONTACT_PATH,
   SERVICES_PATH,
-  ABOUT_PATH
+  ABOUT_PATH,
+  MYV_PATH
 } from "../../Config/constants/ROUTER_URLs";
 
 const useRouter = () => useContext(__RouterContext);
@@ -43,6 +44,7 @@ const Template: React.FC = (props: any) => {
           <ul className="navbar-nav mr-auto">          
             <Link to={HOME_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === HOME_PATH ? styles.activePage: ""}`} >Inicio</Link>
             <Link to={ABOUT_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === ABOUT_PATH ? styles.activePage: ""}`} >¿Quiénes Somos?</Link>
+            <Link to={MYV_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === MYV_PATH ? styles.activePage: ""}`} >Misión y Visión</Link>
             <Link to={SERVICES_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === SERVICES_PATH ? styles.activePage: ""}`} >Servicios</Link>
             <Link to={CONTACT_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === CONTACT_PATH ? styles.activePage: ""}`} >Contáctanos</Link>
           </ul>

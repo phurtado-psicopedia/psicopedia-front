@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Template from "../../Template";
-import { ABOUT_PATH } from "../../../Config/constants/ROUTER_URLs";
+import { ABOUT_PATH, SERVICES_PATH } from "../../../Config/constants/ROUTER_URLs";
 import styles from "./Home.module.scss";
 
 import imgPsicopediaLogo from "../../../Assets/Lavender Circles Wedding Logo.png";
@@ -25,8 +25,12 @@ const Home = ({ ...props } : any) => {
                 </div>
                 
             </div>
-            <Link to={ABOUT_PATH} className={styles.prompt1}>
-                <div className={styles.headline}>Conoce más sobre quienes somos, nuestro enfoque, equipo de trabajo, misión y visión</div>
+            <Link to={ABOUT_PATH} className={`${styles.prompt1} ${styles.p1A}`}>
+                <div className={styles.headline}>Conoce más sobre quienes somos, nuestro enfoque y equipo de trabajo</div>
+                <FontAwesomeIcon icon={faArrowRight} />
+            </Link>
+            <Link to={SERVICES_PATH} className={`${styles.prompt1} ${styles.p1B}`}>
+                <div className={styles.headline}>Conoce nuestros servicios</div>
                 <FontAwesomeIcon icon={faArrowRight} />
             </Link>
             <div className={styles.prompt2}>

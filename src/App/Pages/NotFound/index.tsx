@@ -15,7 +15,7 @@ const NotFound = (props: any) => {
                     <FontAwesomeIcon icon={faExclamation} className={styles.Icon}  size="10x"/>
                     <p>
                         <b>Pagina no encontrada :( </b> 
-                        por favor dirigete al inicio de Psicopedia para mas información.
+                        por favor dirígete al inicio de Psicopedia para mas información.
                     </p>
                 </div>
                 
