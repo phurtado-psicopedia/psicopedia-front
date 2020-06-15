@@ -26,7 +26,7 @@ const Home = ({ ...props } : any) => {
                 
             </div>
             <Link to={ABOUT_PATH} className={styles.prompt1}>
-                <div className={styles.headline}>Conoce mas sobre quienes somos, nuestro enfoque, equipo de trabajo, mision y visión</div>
+                <div className={styles.headline}>Conoce más sobre quienes somos, nuestro enfoque, equipo de trabajo, misión y visión</div>
                 <FontAwesomeIcon icon={faArrowRight} />
             </Link>
             <div className={styles.prompt2}>
@@ -44,7 +44,7 @@ const Home = ({ ...props } : any) => {
                 <img src={imgHoja} alt={"hoja"}></img>
             </div>
             <div className={styles.prompt5}>
-                INFÓRMATE
+                Siguenos nuestras redes
             </div>
 
         </Template>

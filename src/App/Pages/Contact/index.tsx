@@ -28,7 +28,7 @@ const About = ({ ...props } : any) => {
                 <div className={styles.social}>
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.facebook.com/mipsicopedia-104501857947346/"}><img src={iconFacebook} alt="facebook"/>mipsicopedia</a>
                     <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/mipsicopedia/"}><img src={iconInstagram} alt="instagram"/>@mipsicopedia</a>
-                    <a href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>#Psicopedia</a>
+                    <a href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>315 281 0049</a>
                 </div>
                 <div className={styles.captionB}>
                     Email: <a href={"mailto:psicopediacol@gmail.com"}>psicopediacol@gmail.com</a>

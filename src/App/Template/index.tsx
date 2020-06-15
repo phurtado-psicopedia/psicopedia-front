@@ -42,7 +42,7 @@ const Template: React.FC = (props: any) => {
         <div className={`collapse navbar-collapse ${styles.NavCollapsedMenu}`} id="navbarSupportedContent">                      
           <ul className="navbar-nav mr-auto">          
             <Link to={HOME_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === HOME_PATH ? styles.activePage: ""}`} >Inicio</Link>
-            <Link to={ABOUT_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === ABOUT_PATH ? styles.activePage: ""}`} >¿Quienes Somos?</Link>
+            <Link to={ABOUT_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === ABOUT_PATH ? styles.activePage: ""}`} >¿Quiénes Somos?</Link>
             <Link to={SERVICES_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === SERVICES_PATH ? styles.activePage: ""}`} >Servicios</Link>
             <Link to={CONTACT_PATH} className={`btn my-2 my-sm-0 ${styles.NavButton} ${paths === CONTACT_PATH ? styles.activePage: ""}`} >Contáctanos</Link>
           </ul>
@@ -60,7 +60,7 @@ const Template: React.FC = (props: any) => {
           <div className={styles.FooterSocial}>
             <a className={styles.hiddenText} target="_blank" rel="noopener noreferrer" href={"https://www.facebook.com/mipsicopedia-104501857947346/"}><img src={iconFacebook} alt="facebook"/>mipsicopedia</a>
             <a className={styles.hiddenText} target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/mipsicopedia/"}><img src={iconInstagram} alt="instagram"/>@mipsicopedia</a>
-            <a href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>#Psicopedia</a>
+            <a className={styles.hiddenText} href={"https://wa.link/k0ya62"}><img src={iconWhatsapp} alt="whatsapp"/>315 281 0049</a>
           </div>
           <div className={styles.FooterHeader}>Psicopedia</div>
         </div>

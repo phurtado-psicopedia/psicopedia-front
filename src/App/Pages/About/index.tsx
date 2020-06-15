@@ -13,7 +13,7 @@ const About = ({ ...props } : any) => {
         <Template>                        
             <div className={styles.prompt1}>
                 <div className={styles.headline}>
-                    <b>Psicopedia</b> es un equipo de psicólogas egregadas de la Universidad San Buenaventura, Bogotá.
+                    <b>Psicopedia</b> es un equipo de psicólogas egresadas de la Universidad San Buenaventura, Bogotá.
                     
                 </div>                
                 <div className={styles.caption}>
@@ -33,7 +33,7 @@ const About = ({ ...props } : any) => {
                             Zobed Villalba
                         </div>
                         <div className={styles.description}>
-                            Profesional en psicología, con certificaciones en Bioética, Primeros Auxilios Psicológicos, Desarrollo Mental del Niño y el Adolescente, Terapia de Pareja y Gestión Humana. Experiencia en atención personalizada en contextos individuales, educativos y entidades del sector público y privado. 
+                            Profesional en psicología, con certificaciones en Bioética, Primeros Auxilios Psicológicos, Desarrollo Mental del Niño y el Adolescente y Gestión Humana. Experiencia en atención personalizada en contextos individuales, educativos y entidades del sector público y privado. 
                         </div>
                     </div>
                     <div className={styles.personCard}>
@@ -51,7 +51,7 @@ const About = ({ ...props } : any) => {
                             Isis Urzola
                         </div>
                         <div className={styles.description}>
-                            Profesional en psicología, con certificaciones en Administración de Recursos Humanos, Sistema de Gestión en la Seguridad y Salud en el Trabajo, Gestión Humana; con conocimiento en Bioética, Terapia de Pareja. Experiencia en atención personalizada en contextos organizacionales e individuales.
+                            Profesional en psicología, con certificaciones en Administración de Recursos Humanos, Sistema de Gestión en la Seguridad y Salud en el Trabajo, Gestión Humana; con conocimiento en Bioética. Experiencia en atención personalizada en contextos organizacionales e individuales.
                         </div>
                     </div>
                     <div className={styles.personCard}>
