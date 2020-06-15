@@ -44,7 +44,7 @@ const Home = ({ ...props } : any) => {
                 <img src={imgHoja} alt={"hoja"}></img>
             </div>
             <div className={styles.prompt5}>
-                Siguenos nuestras redes
+                Siguenos en nuestras redes
             </div>
 
         </Template>
