@@ -4,7 +4,6 @@ import styles from "./About.module.scss";
 
 import peopleZobed from "../../../Assets/people/Zobed.jpg";
 import peopleAmiga1 from "../../../Assets/people/amigaA.jpg";
-import peopleAmiga2 from "../../../Assets/people/amigaB.jpg";
 import peopleAmiga3 from "../../../Assets/people/amigaC.jpg";
 
 const About = ({ ...props } : any) => {
@@ -43,15 +42,6 @@ const About = ({ ...props } : any) => {
                         </div>
                         <div className={styles.description}>
                             Profesional en psicología, con certificaciones en Bioética, Educación Sexual Integral, Desarrollo Mental del Niño y el Adolescente y Gestión del Talento Humano en aproximación a la ética profesional; conocimiento en procesos de paz y posconflicto. Experiencia en atención personalizada en contextos individuales, sociales y educativos, en sectores públicos y privados. 
-                        </div>
-                    </div>
-                    <div className={styles.personCard}>
-                        <img src={peopleAmiga2} alt={"person"}/>
-                        <div className={styles.name}>
-                            Isis Urzola
-                        </div>
-                        <div className={styles.description}>
-                            Profesional en psicología, con certificaciones en Administración de Recursos Humanos, Sistema de Gestión en la Seguridad y Salud en el Trabajo, Gestión Humana; con conocimiento en Bioética. Experiencia en atención personalizada en contextos organizacionales e individuales.
                         </div>
                     </div>
                     <div className={styles.personCard}>
