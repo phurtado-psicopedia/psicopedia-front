@@ -9,6 +9,12 @@ const About = ({ ...props } : any) => {
             <div className={styles.prompt1}>
                 <div className={styles.headline}>¡Estaremos junto a usted durante todo el proceso!</div>
             </div>
+            <div className={styles.prompt2} style={{ backgroundColor: "#e5f6f7"}}>
+                <div className={styles.headline}>Acompañamiento clínico</div>                
+                <div className={styles.caption}>
+                    Contamos con profesionales en psicología clínica con experiencia en trastornos afectivos y emocionales, procesos psicológicos básicos cognitivos (atención, memoria, lenguaje, pensamiento, emociones, percepciones, etc) y conductuales.
+                </div>
+            </div>
             <div className={styles.prompt2} style={{ backgroundColor: "#f8f9eb"}}>
                 <div className={styles.headline}>Acompañamiento Individual</div>                
                 <div className={styles.caption}>

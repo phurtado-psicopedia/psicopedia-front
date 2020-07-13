@@ -33,7 +33,7 @@ const Template: React.FC = (props: any) => {
         <img src={imgPsicopediaLogo} alt="logo psicopedia" />
         <Link to={"/"} className={styles.title}>
           <span>Psicopedia </span>
-          <i>Equipo de psicólogos</i>
+          <i>Centro de bienestar psicológico</i>
         </Link>        
 
         <button className={`navbar-toggler ${styles.NavButtonToggler}`} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

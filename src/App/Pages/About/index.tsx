@@ -5,6 +5,7 @@ import styles from "./About.module.scss";
 import peopleZobed from "../../../Assets/people/Zobed.jpg";
 import peopleAmiga1 from "../../../Assets/people/amigaA.jpg";
 import peopleAmiga3 from "../../../Assets/people/amigaC.jpg";
+import peopleAmiga4 from "../../../Assets/people/amigaD.jpeg";
 
 const About = ({ ...props } : any) => {
 
@@ -12,7 +13,7 @@ const About = ({ ...props } : any) => {
         <Template>                        
             <div className={styles.prompt1}>
                 <div className={styles.headline}>
-                    <b>Psicopedia</b> es un equipo de psicólogas egresadas de la Universidad San Buenaventura, Bogotá.
+                    <b>Psicopedia</b> es un centro de bienestar psicológico.
                     
                 </div>                
                 <div className={styles.caption}>
@@ -32,7 +33,7 @@ const About = ({ ...props } : any) => {
                             Zobed Villalba
                         </div>
                         <div className={styles.description}>
-                            Profesional en psicología, con certificaciones en Bioética, Primeros Auxilios Psicológicos, Desarrollo Mental del Niño y el Adolescente y Gestión Humana. Experiencia en atención personalizada en contextos individuales, educativos y entidades del sector público y privado. 
+                            Profesional en psicología, con certificaciones en Inteligencia emocional, Bioética, Primeros Auxilios Psicológicos, Desarrollo Mental del Niño y el Adolescente y Gestión Humana. Experiencia en atención personalizada en contextos individuales, educativos y entidades del sector público y privado. 
                         </div>
                     </div>
                     <div className={styles.personCard}>
@@ -41,7 +42,7 @@ const About = ({ ...props } : any) => {
                             Karen Macias
                         </div>
                         <div className={styles.description}>
-                            Profesional en psicología, con certificaciones en Bioética, Educación Sexual Integral, Desarrollo Mental del Niño y el Adolescente y Gestión del Talento Humano en aproximación a la ética profesional; conocimiento en procesos de paz y posconflicto. Experiencia en atención personalizada en contextos individuales, sociales y educativos, en sectores públicos y privados. 
+                            Profesional en psicología, con certificaciones en Inteligencia emocional, Bioética, Educación Sexual Integral, Desarrollo Mental del Niño y el Adolescente y Gestión del Talento Humano en aproximación a la ética profesional; conocimiento en procesos de paz y posconflicto. Experiencia en atención personalizada en contextos individuales, sociales y educativos, en sectores públicos y privados. 
                         </div>
                     </div>
                     <div className={styles.personCard}>
@@ -50,7 +51,16 @@ const About = ({ ...props } : any) => {
                             Piedad Hurtado
                         </div>
                         <div className={styles.description}>
-                        Profesional en psicología, con certificaciones en Bioética, Gestión del Talento Humano, Administración de Recursos Humanos. Con experiencia en contextos organizacionales en sectores públicos y privados. 
+                            Profesional en psicología, con certificaciones en Inteligencia emocional, Bioética, Gestión del Talento Humano, Administración de Recursos Humanos. Con experiencia en contextos organizacionales en sectores públicos y privados. 
+                        </div>
+                    </div>
+                    <div className={styles.personCard}>
+                        <img src={peopleAmiga4} alt={"person"}/>
+                        <div className={styles.name}>
+                            Jhoana Bello
+                        </div>
+                        <div className={styles.description}>
+                            Profesional de psicología, con conocimientos en procesos psicológicos básicos cognitivos (atención, memoria, lenguaje, pensamiento, emociones, percepciones, etc) y conductuales. Experiencia previa de práctica en el área clínica desde la perspectiva cognitivo conductual en los ámbitos de salud, penitenciarios y escolares. Realización de proyectos de investigación y publicación de artículos científicos. 
                         </div>
                     </div>
                 </div>
